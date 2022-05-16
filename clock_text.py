@@ -3,7 +3,7 @@ import time
 
 option = input("Do you want to use the clock (C), the timer (T) or the stopwatch (S)?\n> ")
 
-def timer():
+def stopwatch():
     start_time = time.time()
     last_time = start_time
     lap_number = 1
@@ -36,7 +36,7 @@ def timer():
 
     print("Finished!")
 
-def stopwatch():
+def timer():
 
     # Inputs for stopwatch
     input_hours = input("Enter number of hours:\n> ")
