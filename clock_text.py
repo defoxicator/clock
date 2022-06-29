@@ -56,7 +56,7 @@ def timer():
     # Total number of seconds
     total_seconds = h * 3600 + m * 60 + s
 
-    # Checks if total_seconds are more than zero
+    """  # Checks if total_seconds are more than zero
     while total_seconds > 0:
 
         # Time left
@@ -69,7 +69,12 @@ def timer():
         time.sleep(1)
 
         # Reduces total_time by 1 second
-        total_seconds -= 1
+        total_seconds -= 1 """
+
+    # updated to fit in for loop
+    for second in reversed(range(total_seconds+1)):
+        print("Time left:", second, end="   \r")
+        time.sleep(1)
 
     print("BZZZZT!!! Finished!")
 
